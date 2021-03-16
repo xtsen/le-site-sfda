@@ -2,7 +2,6 @@ body {
     background: linear-gradient(60deg,#7ED8BD, #FFE8AD);
 }
 
-
 /* Top nav bar */
 
 div.top_nav_bar {
@@ -32,7 +31,7 @@ a.link_menu {
 div#item_nav_home {
     position: absolute;
     width:8%;
-    height: 100px;
+    height: 80%;
     margin-left: 45%;
     top: 10%;
     display: flex;
@@ -48,7 +47,7 @@ div#item_nav_home {
 div#item_nav_account {
     position: absolute;
     width:8%;
-    height: 100px;
+    height: 80%;
     margin-left: 25%;
     top: 10%;
     display: flex;
@@ -61,7 +60,7 @@ div#item_nav_account {
 div#item_nav_found_object {
     position: absolute;
     width:8%;
-    height: 100px;
+    height: 80%;
     margin-left: 65%;
     top: 10%;
     display: flex;
@@ -74,7 +73,7 @@ div#item_nav_found_object {
 div#item_nav_message {
     position: absolute;
     width:8%;
-    height: 100px;
+    height: 80%;
     margin-left: 5%;
     top: 10%;
     display: flex;
@@ -87,7 +86,7 @@ div#item_nav_message {
 div#item_nav_see_my_activity {
     position: absolute;
     width:8%;
-    height: 100px;
+    height: 80%;
     margin-left: 85%;
     top: 10%;
     display: flex;
@@ -103,7 +102,7 @@ div#content_home{
 
 div.box_home {
     margin-top: 4%;
-    margin-left: 14%;
+    margin-left: 15%;
     border: black 2px solid;
     padding: 1%;
     padding-top: 0.2%;
@@ -114,11 +113,11 @@ div.box_home {
 }
 
 p.title_box_home{
-    font-size: 250%;
+    font-size: 180%;
     font-weight: bold;
 }
 p.description_box_home{
-    font-size: 140%;
+    font-size: 130%;
 }
 
 /* Content SMA */
