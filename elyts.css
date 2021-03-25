@@ -169,7 +169,10 @@ ul.description_project li{
     font-size: 110%;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+a.lien_box {
+    text-decoration: none;
+    color: black;
+}
 /* Account  */
 
 #bodyForm {
@@ -252,7 +255,7 @@ form.ConnexionForm {
     text-decoration: underline;
 }
 
-a {
+a.linkLogIn {
     color: #E1BEE7;
     text-decoration: none
 }
