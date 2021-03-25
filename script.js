@@ -1,3 +1,20 @@
+function show_available() {
+    zone_a_montrer = document.getElementById("available_hide");
+    zone_a_montrer.className="visible";
+    button = document.getElementById("plus_button_available");
+    button.className="invisible";
+    button = document.getElementById("minus_button_available");
+    button.className="plus_or_minus_button";
+}
+function hide_available() {
+    zone_a_cacher = document.getElementById("available_hide");
+    zone_a_cacher.className="invisible";
+    button = document.getElementById("minus_button_available");
+    button.className="invisible";
+    button = document.getElementById("plus_button_available");
+    button.className="plus_or_minus_button";
+}
+
 function hide_update() {
     zone_a_cacher = document.getElementById("update_hide");
     zone_a_cacher.className="invisible";
