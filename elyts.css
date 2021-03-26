@@ -1,31 +1,39 @@
 body {
     background: linear-gradient(to right,#75b0d8, #a96dbb);
     color: black;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 
 /* Top nav bar */
 
 div.top_nav_bar {
-    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
     width: 100%;
-    height: 15%;
+    height: 10%;
     top: 0;
     left: 0;
     right: 0;
-    background-color: #c4c4c4ad;
+    background: linear-gradient(to right,#adc2ce, #a292a7);
 }
 
-.uncheck {
-    background: rgba(255, 255, 255, 0.51);
+p.titleSite {
+    margin-right:40%;
+    font-weight: 700;
 }
-.check {
-    background-color: white;
-}
+
 a.link_menu {
-    text-decoration: none;
-    color: black;
+    margin-right: 4%;
+    text-decoration: underline 2px solid black;
+    color: rgb(27, 27, 27);
+}
+a.link_menu:hover {
+    margin-right: 4%;
+    text-decoration: underline 2px solid white;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -130,51 +138,58 @@ div#content_sma {
     
 }
 div.header {
-    display: flex;
-    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: rgba(231, 231, 231, 0.377);
+    border-radius: 20px;
+    width: 60%;
+    display: block;
     margin-bottom: 10%;
     margin-left: auto;
     margin-right: auto;
     height: fit-content;
 }
 h2.TitleHeader {
-    position: absolute;
     text-align: center;
 }
 p.subTitleHeader {
     margin-top: 6%;
-    position: absolute;
-    width: 40%;
+    width: 70%;
+    font-size: 120%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
 }
 div.choiceWebSite {
-    margin-top: 12%;
+    margin-top: 3%;
     width: 50%;
     display: flex;
     justify-content: space-between;
     margin-left: 25%;
     margin-right: auto;
-    /* background-color: rgba(180, 103, 103, 0.308); */
 }
 p.onlyPublishedWebSite{
     cursor: pointer;
     height: 25%;
     border-radius: 20px;
+    font-size: 110%;
     text-align: center;
-    padding: 3.5%;
+    padding: 10%;
     width: 100%;
+    height: 15%;
     margin-right: 10%;
     background-color: rgba(139, 197, 224, 0.842);
 }
 
 p.allWebSite{
-    padding: 3.5%;
+    padding: 10%;
     cursor: pointer;
     height: 30%;
-    font-size: 130%;
+    font-size: 120%;
     border-radius: 20px;
     text-align: center;
     width: 100%;
+    height: 30%;
     background-color: rgba(200, 139, 224, 0.842);
 }
 .invisible {

@@ -37,11 +37,11 @@
                 d'autre n'en sont qu'au stade de reflexion</p>
 
             <div class="choiceWebSite">
-                <a @click="onlyPublished()">
+                <a onclick="onlyPublished()">
                     <p class="onlyPublishedWebSite">Seulement les sites publiés</p>
                 </a>
                 <div class="divAllWebSite">
-                    <a @click="allWebSite()">
+                    <a onclick="allWebSite()">
                         <p class="allWebSite">Tous les sites</p>
                     </a>
                 </div>
@@ -124,7 +124,7 @@
             </div>
         </div>
 
-        <div class="projects" x-show="showAllProjects">  <!-- Section Project-->
+        <div class="projects" id="showAllProjects">  <!-- Section Project-->
             <hr>
             <p class="title_section_sma">Projets : </p>
             
@@ -155,16 +155,7 @@
     <script type="text/javascript">
         function data () {
             return {
-                showAllProjects: true,
-                allWebSite() {
-                    console.log(showAllProjects.value)
-                    showAllProjects = true;
-                },
-                onlyPublished() {
-                    console.log(showAllProjects.value)
-                    showAllProjects = false;
-                    console.log(showAllProjects.value)
-                }
+                
             };
         }
     </script>
