@@ -18,7 +18,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Connexion - Auto diagnostic RPS</title>
-    <link href="elyts.css" rel="stylesheet" type="text/css">
+    <link href="styleConnexion.css" rel="stylesheet" type="text/css">
 </head>
 <body id="bodyForm">
     <div class="main">
