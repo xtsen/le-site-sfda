@@ -1,5 +1,4 @@
 body {
-    background: linear-gradient(to right,#75b0d8, #a96dbb);
     color: black;
     font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -17,11 +16,15 @@ div.top_nav_bar {
     top: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to right,#adc2ce, #a292a7);
+    background-color: rgba(73, 73, 73, 0.925);
 }
-
+img.imgNavBar {
+    width: 3%;
+    height: auto;
+}
 p.titleSite {
-    margin-right:40%;
+    margin-left: 1%;
+    margin-right:45%;
     font-weight: 700;
 }
 
@@ -36,74 +39,6 @@ a.link_menu:hover {
     color: rgb(255, 255, 255);
 }
 
-
-/* Home */
-
-div#item_nav_home {
-    position: absolute;
-    width:8%;
-    height: 80%;
-    margin-left: 45%;
-    top: 10%;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-}
-.icon {
-    margin-top: 10%;
-}
-
-/* Account */
-
-div#item_nav_account {
-    position: absolute;
-    width:8%;
-    height: 80%;
-    margin-left: 25%;
-    top: 10%;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-}
-
-/* Found_object */
-
-div#item_nav_found_object {
-    position: absolute;
-    width:8%;
-    height: 80%;
-    margin-left: 65%;
-    top: 10%;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-}
-
-/* Messages */
-
-div#item_nav_message {
-    position: absolute;
-    width:8%;
-    height: 80%;
-    margin-left: 5%;
-    top: 10%;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-}
-
-/* see_my_activity */
-
-div#item_nav_see_my_activity {
-    position: absolute;
-    width:8%;
-    height: 80%;
-    margin-left: 85%;
-    top: 10%;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-}
 
 /* Content home */
 
@@ -238,7 +173,7 @@ a.lien_box {
     color: black;
 }
 
-/* Account  */
+/* Contact  */
 
 #bodyForm {
     background-color: #d2faff;
@@ -268,11 +203,10 @@ form.ConnexionForm {
 }
 
 #code {
-    letter-spacing: 10px;
     width: 76%;
     color: rgb(38, 50, 56);
     font-weight: 700;
-    font-size: 140%;
+    font-size: 100%;
     background: rgba(136, 126, 126, 0.253);
     padding: 10px 20px;
     border-radius: 20px;
@@ -288,7 +222,7 @@ form.ConnexionForm {
     width: 76%;
     color: rgb(38, 50, 56);
     font-weight: 700;
-    font-size: 140%;
+    font-size: 110%;
     background: rgba(136, 126, 126, 0.253);
     padding: 10px 20px;
     border-radius: 20px;
@@ -323,4 +257,104 @@ form.ConnexionForm {
 a.linkLogIn {
     color: #E1BEE7;
     text-decoration: none
+}
+
+/* Settings */
+div.bodySetting {
+    margin-top: 10%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    width: 90%;
+    height: 120%;
+    margin-left: 5%;
+}
+div.settings {
+    border-radius: 20px;
+    padding: 5%;
+    color: rgb(66, 66, 66);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.801);
+}
+h1.TitleSettings {
+    text-align: center;
+}
+h3.TitleSetting {
+    margin-top: 10%;
+}
+
+div.choixCouleur1 {
+    background: linear-gradient(to right,#75b0d8, #a96dbb);
+    position: absolute;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    margin-left: 0%;
+}
+.ColorDiv1 {
+    background: linear-gradient(to right,#75b0d8, #a96dbb);
+}
+div.choixCouleur2 {
+    background: linear-gradient(to right,#d6d875, #bb6d6d);
+    position: absolute;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    margin-left: 12.5%;
+}
+.ColorDiv2 {
+    background: linear-gradient(to right,#d6d875, #bb6d6d);
+}
+div.choixCouleur3 {
+    background: linear-gradient(to right,#acff93, #2c8064);
+    position: absolute;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    margin-left: 25%;
+}
+.ColorDiv3 {
+    background: linear-gradient(to right,#acff93, #2c8064);
+}
+div.choixCouleur4 {
+    background: linear-gradient(to right,#000000, #ffffff);
+    position: absolute;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    margin-left: 37%;
+}
+.ColorDiv4 {
+    background: linear-gradient(to right,#000000, #ffffff);
+}
+div.choixCouleur5 {
+    background: black;
+    position: absolute;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    margin-left: 49%;
+}
+.ColorDiv5 {
+    background: black;
+}
+div.choixCouleur6 {
+    background: white;
+    border: 1px solid black;
+    position: absolute;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 10%;
+    height: 10%;
+    margin-left: 61%;
+}
+.ColorDiv6 {
+    background: white;
 }

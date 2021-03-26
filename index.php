@@ -11,18 +11,36 @@
     }
 
 ?>
+<!--
+
+
+
+
+
+===          ===     =============   ===========        ==========    ====      |
+   ===    ===              |         \                  |             |   \     |
+      ====         X       |    T     \ ========  S     ========   E  |    \    |   N
+   ===    ===              |                   /        |             |     \   |
+===          ===           |         =========/   *     ==========    |      ====
+
+2021
+
+
+
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <link rel="shortcut icon" type="image/png" href="images/logoNeholys.png"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Connexion - Auto diagnostic RPS</title>
+    <title>Connexion - SFDApp</title>
     <link href="styleConnexion.css" rel="stylesheet" type="text/css">
 </head>
 <body id="bodyForm">
     <div class="main">
-        <p class="TitleSign">Connexion</p>
+        <p class="TitleSign">Connexion au site le plus fun</p>
         <form class="ConnexionForm" method="post">
             <input required name="code" id="code" type="text" min-length="6" max-length ="6" placeholder="------">
             <button class="submit">Connexion</button>

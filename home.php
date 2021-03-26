@@ -20,12 +20,13 @@
 <!DOCTYPE html>
 <html>
     <head><!-- la balise head signifie tête ce qui va representer tout ce qui est non visible a part le titre -->
-        <meta charset="utf-8"/>
-        <title>SiteFDA</title>
-        <link rel="stylesheet" type="text/css" href="elyts.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+      <link rel="shortcut icon" type="image/png" href="SFDApp.png"/>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Paramètre</title>
+      <link href="elyts.css" rel="stylesheet" type="text/css">
     </head>
-    <body><!-- Ici on passe au body donc la partie visible de la page -->
+    <body id="bodyColor" onload="setBackground()"><!-- Ici on passe au body donc la partie visible de la page -->
     <?php include "navBar.php" ?>
         <div id="content_home">
             <div class="box_home">
