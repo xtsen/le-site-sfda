@@ -129,10 +129,12 @@ div#content_sma {
     margin-top: 10%;
     
 }
-header {
+div.header {
     display: flex;
     justify-content: center;
     margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
     height: fit-content;
 }
 h2.TitleHeader {
@@ -146,33 +148,33 @@ p.subTitleHeader {
     text-align: center;
 }
 div.choiceWebSite {
-    width: 20%;
+    margin-top: 12%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
-    margin-left: auto;
+    margin-left: 25%;
     margin-right: auto;
+    /* background-color: rgba(180, 103, 103, 0.308); */
 }
 p.onlyPublishedWebSite{
     cursor: pointer;
     height: 25%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px;
     text-align: center;
     padding: 3.5%;
-    margin-top: 80%;
-    width: 60%;
+    width: 100%;
+    margin-right: 10%;
     background-color: rgba(139, 197, 224, 0.842);
 }
+
 p.allWebSite{
+    padding: 3.5%;
     cursor: pointer;
     height: 30%;
     font-size: 130%;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 20px;
     text-align: center;
-    padding: 3.5%;
-    margin-top: 365%;
-    width: 300%;
+    width: 100%;
     background-color: rgba(200, 139, 224, 0.842);
 }
 .invisible {
@@ -224,7 +226,7 @@ a.lien_box {
 /* Account  */
 
 #bodyForm {
-    background-color: #d2faff;
+    background-color: #fcf7ff;
     font-family: 'Ubuntu', sans-serif;
 }
 .main {
@@ -232,7 +234,7 @@ a.lien_box {
     width: 400px;
     padding-bottom: 2%;
     height: fit-content;
-    margin: 10vw auto;
+    margin: 7vw auto;
     border-radius: 30px;
     box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
 }
@@ -251,7 +253,7 @@ form.ConnexionForm {
 }
 
 #code {
-    letter-spacing: 10px;
+    letter-spacing: 15px;
     width: 76%;
     color: rgb(38, 50, 56);
     font-weight: 700;
@@ -266,22 +268,7 @@ form.ConnexionForm {
     text-align: center;
     margin-bottom: 27px;
 }
-#mail {
-    letter-spacing: 1px;
-    width: 76%;
-    color: rgb(38, 50, 56);
-    font-weight: 700;
-    font-size: 140%;
-    background: rgba(136, 126, 126, 0.253);
-    padding: 10px 20px;
-    border-radius: 20px;
-    box-sizing: border-box;
-    border: 2px solid rgba(0, 0, 0, 0.02);
-    margin-bottom: 50px;
-    margin-left: 46px;
-    text-align: center;
-    margin-bottom: 27px;
-}
+
 .submit {
     cursor: pointer;
     border-radius: 70px;
@@ -296,14 +283,12 @@ form.ConnexionForm {
     border: 1px solid #fff;
 }
 
-.forgotPass {
-    color: #E1BEE7;
-    text-align: center;
-    padding-top: 15px;
-    text-decoration: underline;
-}
-
 a.linkLogIn {
     color: #E1BEE7;
     text-decoration: none
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin:0;
 }
