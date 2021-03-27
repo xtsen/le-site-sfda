@@ -84,6 +84,14 @@ div.header {
     margin-right: auto;
     height: fit-content;
 }
+.boxSVG {
+    display: flex;
+    justify-content: center;
+}
+.svgSMA {
+    width: 20%;
+    height: 20%;
+}
 h2.TitleHeader {
     text-align: center;
 }
@@ -176,15 +184,30 @@ a.lien_box {
 /* Contact  */
 
 #bodyForm {
+    display: flex;
+    justify-content: space-between;
     background-color: #d2faff;
     font-family: 'Ubuntu', sans-serif;
+}
+.svgContact {
+    margin-top: 10vh;
+    margin-left: 10vw;
+    width: 30%;
+    height: 30%;
+    left: 0%;
+}
+.boxForm {
+    margin-top: 6%;
+    display: flex;
+    justify-content: right;
 }
 .main {
     background-color: #FFFFFF;
     width: 400px;
     padding-bottom: 2%;
     height: fit-content;
-    margin: 10vw auto;
+    margin-right: 0vw;
+    margin-left: 20vw;
     border-radius: 30px;
     box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
 }
@@ -218,7 +241,6 @@ form.ConnexionForm {
     margin-bottom: 27px;
 }
 #mail {
-    letter-spacing: 1px;
     width: 76%;
     color: rgb(38, 50, 56);
     font-weight: 700;
@@ -232,6 +254,30 @@ form.ConnexionForm {
     margin-left: 46px;
     text-align: center;
     margin-bottom: 27px;
+}
+#name {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 110%;
+    background: rgba(136, 126, 126, 0.253);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+}
+.label {
+    margin-left: 50px;
+    width: 70%;
+    color: rgb(38, 49, 54);
+    font-size: 120%;
+    font-weight: 600;
+    box-sizing: border-box;
+    text-align: left;
 }
 .submit {
     cursor: pointer;
@@ -274,11 +320,22 @@ div.settings {
     padding: 5%;
     color: rgb(66, 66, 66);
     width: 80%;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: rgba(255, 255, 255, 0.801);
 }
+.divTitleSettings {
+    display: flex;
+    align-items: center;
+}
+.svgSettings {
+    width: 20%;
+    height: 20%;
+}
 h1.TitleSettings {
+    
+    margin-left: 20%;
     text-align: center;
 }
 h3.TitleSetting {
