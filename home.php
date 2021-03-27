@@ -42,6 +42,7 @@
                 <p class="description_box_home">Malgrès ce qu'on raconte cette information se revele être fausse</p>
             </div>
         </div>
+    <?php include "footer.php" ?>
     <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js" defer></script>
     <script src="js/script.js"></script>

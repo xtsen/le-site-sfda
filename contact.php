@@ -36,6 +36,7 @@
             <button class="submit">Envoyer</button>
         </form>
     </div>
+    <?php include "footer.php" ?>
     <script src="js/script.js"></script>
 </body>
 </html>

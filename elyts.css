@@ -358,3 +358,38 @@ div.choixCouleur6 {
 .ColorDiv6 {
     background: white;
 }
+ /* Footer */
+
+div.footer {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 1%;
+    color: white;
+    bottom: 0%;
+    background-color: rgb(44, 44, 44);
+    width: 98%;
+    height: 10%;
+}
+div.sitesAvailable {
+    margin-top: 3%;
+    padding-left: 2%;
+    width: 30%;
+}
+a.siteAvailable {
+    color: white;
+    text-decoration: none;
+}
+div.useLanguages {
+    text-align: center;
+    padding-left: 2%;
+    width: 30%;
+    border-left: solid 2px white;
+    border-right: solid 2px white;
+}
+div.contactInformations {
+    margin-top: 3%;
+    padding-right: 7.5%;
+    text-align: center;
+}
