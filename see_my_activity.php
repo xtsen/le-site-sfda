@@ -22,7 +22,7 @@
       <link rel="shortcut icon" type="image/png" href="SFDApp.png"/>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Mes projets</title>
+      <title>SFDApp - Mes projets</title>
       <link href="elyts.css" rel="stylesheet" type="text/css">
     </head>
     <body id="bodyColor" onload="setBackground()">

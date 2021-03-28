@@ -23,7 +23,7 @@
       <link rel="shortcut icon" type="image/png" href="SFDApp.png"/>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <title>Paramètre</title>
+      <title>SFDApp -  Accueil</title>
       <link href="elyts.css" rel="stylesheet" type="text/css">
     </head>
     <body id="bodyColor" onload="setBackground()"><!-- Ici on passe au body donc la partie visible de la page -->
