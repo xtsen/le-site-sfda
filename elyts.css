@@ -84,7 +84,6 @@ svg.imgFaceHome {
     width: 5%;
     height: 5%;
 }
-
 .BoxContent {
     width: 30%;
     height: 500px;
@@ -96,13 +95,13 @@ svg.imgFaceHome {
     margin-top: 10%;
     margin-left: 7.4%;
     position: absolute;
-    width: 29.5%;
+    width: 29.4%;
     height: 36.5%;
     left: 40px;
     bottom: 0%;
 }
 .Content {
-    top: 135%;
+    top: 140%;
     padding: 1%;
     position: absolute;
     width: 27.5%;
@@ -254,7 +253,8 @@ a.lien_box {
     left: 0%;
 }
 .boxForm {
-    margin-top: 6%;
+    margin-top: 10%;
+    margin-bottom: 20%;
     display: flex;
     justify-content: right;
 }
@@ -475,7 +475,7 @@ div.choixCouleur6 {
  /* Footer */
 
 div.footer {
-    margin-top: 5%;
+    margin-top: 0%;
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
