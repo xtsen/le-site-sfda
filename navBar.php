@@ -4,7 +4,7 @@
     <a href="home.php" class="link_menu" id="homeIcon">
         Accueil
     </a>
-    <a href="found_object.php" class="link_menu" id="foundObjectIcon">
+    <a href="forum.php" class="link_menu" id="foundObjectIcon">
         Forum
     </a>
     <a href="see_my_activity.php" class="link_menu" id="seeMyActivityIcon">
