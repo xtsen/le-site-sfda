@@ -1,5 +1,5 @@
 <div class="top_nav_bar">
-    <img class="imgNavBar" src="Logo SFDApp.png">
+    <img class="imgNavBar" src="images/Logo_SFDApp.png">
     <p class="titleSite">SFDApp</p>
     <a href="home.php" class="link_menu" id="homeIcon">
         Accueil

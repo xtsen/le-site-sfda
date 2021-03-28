@@ -475,7 +475,7 @@ div.choixCouleur6 {
  /* Footer */
 
 div.footer {
-    margin-top: 0%;
+    margin-top: 5%;
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
@@ -495,6 +495,10 @@ a.siteAvailable {
     color: white;
     text-decoration: none;
 }
+.svgSites {
+    width: 30%;
+    height: 30%;
+}
 div.useLanguages {
     text-align: center;
     padding-left: 2%;
@@ -502,8 +506,16 @@ div.useLanguages {
     border-left: solid 2px white;
     border-right: solid 2px white;
 }
+.svgLanguages {
+    width: 30%;
+    height: 30%;
+}
 div.contactInformations {
     margin-top: 3%;
-    padding-right: 7.5%;
+    padding-right: 3%;
     text-align: center;
+}
+.svgFooterContact {
+    width: 30%;
+    height: 30%;
 }
