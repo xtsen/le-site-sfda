@@ -45,30 +45,53 @@ a.link_menu:hover {
 div#content_home{
     margin-top: 5%;
 }
+.headerHome {
+    margin-top: 7%;
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    background-color: rgba(63, 63, 63, 0.973);
+}
 p.titleHome1 {
+    font-size: 280%;
+    top: 40%;
+    left: 8%;
     position: absolute;
     color: white;
 
 }
 p.titleHome2 {
+    text-align: justify;
+    width: 20%;
+    font-size: 120%;
+    top: 40%;
+    right: 3%;
     color: white;
     position: absolute;
 }
-
 svg.imgFaceHome {
+    width: 50%;
+    height: 30%;
     border-radius: 15px;
     padding: 4%;
-    background-color: rgba(63, 63, 63, 0.973);
-    margin-left: 1%;
+    margin-left: 20%;
     margin-right: auto;
 }
+.downArrowSeparate {
+    color: white;
+    margin-top: 1%;
+    margin-left: 47.5%;
+    width: 5%;
+    height: 5%;
+}
+
 .BoxContent {
     width: 30%;
     height: 500px;
     bottom: 20%;
 }
 .BackgroundImage {
-    top: 140%;
+    top: 90%;
     background: linear-gradient(to right,#d6d875, #bb6d6d);
     margin-top: 10%;
     margin-left: 7.4%;
@@ -79,7 +102,7 @@ svg.imgFaceHome {
     bottom: 0%;
 }
 .Content {
-    top: 195%;
+    top: 135%;
     padding: 1%;
     position: absolute;
     width: 27.5%;
