@@ -26,7 +26,7 @@
       <link href="elyts.css" rel="stylesheet" type="text/css">
     </head>
     <body id="bodyColor" onload="setBackground()">
-        <?php include "navBar.php" ?>
+        <?php include "include/navBar.php" ?>
 
         <!--Contenu de la page see_my_activity.html -->
 
@@ -154,7 +154,7 @@
                 </div>
             </div>
         </div>
-    <?php include "footer.php" ?>
+    <?php include "include/footer.php" ?>
         <script src="js/script.js"></script>
     </body>
 </html>
