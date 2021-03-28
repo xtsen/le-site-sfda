@@ -496,10 +496,11 @@ a.siteAvailable {
     text-decoration: none;
 }
 .svgSites {
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
 }
 div.useLanguages {
+    overflow: hidden;
     text-align: center;
     padding-left: 2%;
     width: 30%;
@@ -507,8 +508,8 @@ div.useLanguages {
     border-right: solid 2px white;
 }
 .svgLanguages {
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 35%;
 }
 div.contactInformations {
     margin-top: 3%;
@@ -516,6 +517,6 @@ div.contactInformations {
     text-align: center;
 }
 .svgFooterContact {
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
 }
