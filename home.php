@@ -27,7 +27,7 @@
       <link href="elyts.css" rel="stylesheet" type="text/css">
     </head>
     <body id="bodyColor" onload="setBackground()"><!-- Ici on passe au body donc la partie visible de la page -->
-    <?php include "include/navBar.php" ?>
+    <?php include "includes/navBar.php" ?>
         <div id="content_home">
             <div class="headerHome">
                 <p class="titleHome1">Bonjour,</p>
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-    <?php include "include/footer.php" ?>
+    <?php include "includes/footer.php" ?>
     <script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js" defer></script>
     <script src="js/script.js"></script>

@@ -26,7 +26,7 @@
       <link href="elyts.css" rel="stylesheet" type="text/css">
    </head>
    <body id="bodyColor" onload="setBackground()">
-   <?php include "include/navBar.php" ?>
+   <?php include "includes/navBar.php" ?>
       <div class="bodySetting">
          
          <div class="settings">

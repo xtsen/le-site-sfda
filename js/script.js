@@ -26,3 +26,6 @@ function setBackground() {
     document.addEventListener("DOMContentLoaded", changeColor1(),{
     });
 }
+function redirectSMA() {
+    
+}

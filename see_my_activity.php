@@ -26,7 +26,7 @@
       <link href="elyts.css" rel="stylesheet" type="text/css">
     </head>
     <body id="bodyColor" onload="setBackground()">
-        <?php include "include/navBar.php" ?>
+        <?php include "includes/navBar.php" ?>
 
         <!--Contenu de la page see_my_activity.html -->
 
@@ -85,6 +85,16 @@
                             <ul class="description_project">
                                 <li>Un jeu en python</li>
                                 <li>A telecherger seulement en cas d'extreme ennui</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a href="https://xtsen.github.io/SFDA-love/" class="lien_box">
+                        <div class="project">
+                            <p class="title_project">SFDA love</p>
+                            <ul class="description_project">
+                                <li>Connaitre son âme soeur</li>
+                                <li>Site micro sfda</li>
+                                <li>Un nom trop bien</li>
                             </ul>
                         </div>
                     </a>
@@ -154,7 +164,7 @@
                 </div>
             </div>
         </div>
-    <?php include "include/footer.php" ?>
+    <?php include "includes/footer.php" ?>
         <script src="js/script.js"></script>
     </body>
 </html>
