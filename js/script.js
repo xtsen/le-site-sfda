@@ -23,8 +23,6 @@ function changeColor6() {
     document.getElementById("bodyColor").className = "ColorDiv6";
 }
 function setBackground() {
-    document.addEventListener("DOMContentLoaded", changeColor1(),{
-    });
 }
 function redirectSMA() {
     
