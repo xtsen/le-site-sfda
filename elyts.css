@@ -1,3 +1,4 @@
+
 @media screen and (min-width: 319px) {
     body {
         color: white;
@@ -28,7 +29,9 @@
         justify-content: flex-end;
         position: absolute;
         width: 100%;
-        height: 10%;
+        height: fit-content;
+        padding: 2%;
+        padding-left: 0%;
         top: 0;
         left: 0;
         right: 0;
@@ -39,12 +42,14 @@
         height: auto;
     }
     p.titleSite {
-        margin-left: 1%;
-        margin-right:45%;
+        margin-right: 12%;
         font-weight: 700;
+        font-size: 160%;
     }
     
     a.link_menu {
+        font-size: 150%;
+        width: fit-content;
         margin-right: 4%;
         text-decoration: underline 2px solid rgb(191, 173, 224);
         color: white;
@@ -52,14 +57,13 @@
     a.link_menu:hover {
         margin-right: 4%;
         text-decoration: underline 2px solid white;
-        color: rgb(191, 173, 224);
     }
     
     
     /* Content home */
     
     div#content_home{
-        margin-top: 5%;
+        margin-top: 15%;
     }
     .headerHome {
         display: flex;
@@ -67,30 +71,31 @@
         margin-top: 7%;
         border-radius: 20px;
         width: 100%;
+        height: 60vh;
         background-color: rgba(63, 63, 63, 0.973);
     }
     p.titleHome1 {
         position: absolute;
-        font-size: 280%;
-        top: 40%;
-        left: 8%;
+        font-size: 500%;
+        width: 70%;
+        margin-top: 20%;
         color: white;
-    
+        text-align: center;
     }
     p.titleHome2 {
         position: absolute;
-        text-align: justify;
-        width: 20%;
-        font-size: 120%;
-        top: 40%;
-        right: 3%;
+        text-align: center;
+        font-size: 250%;
+        width: 70%;
+        margin-top: 100%;
         color: white;
     }
     svg.imgFaceHome {
-        width: 50%;
-        height: 30%;
+        margin-top: 40%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
         border-radius: 15px;
-        padding: 4%;
     }
     .downArrowSeparate {
         color: white;
@@ -99,10 +104,11 @@
         width: 5%;
         height: 5%;
     }
-    #Content2Home {
+    .Content2Home {
         display: flex;
-        /* background-color: yellow; */
+        justify-content: space-between;
         width: 100%;
+        margin-top: 2%;
     }
     
     .BoxContent {
@@ -237,6 +243,7 @@
         padding: 1%;
         height: 250px;
         width: 250px;
+        color: white;
     }
     p.title_project {
         font-size: 200%;
@@ -570,8 +577,8 @@
         align-items: center;
         justify-content: flex-end;
         position: absolute;
-        width: 100%;
-        height: 10%;
+        width: 98%;
+        height: 5%;
         top: 0;
         left: 0;
         right: 0;
@@ -582,20 +589,19 @@
         height: auto;
     }
     p.titleSite {
+        margin-right:35%;
+        font-size: 130%;
         margin-left: 1%;
-        margin-right:45%;
         font-weight: 700;
     }
     
     a.link_menu {
-        margin-right: 4%;
         text-decoration: underline 2px solid rgb(191, 173, 224);
         color: white;
+        font-size: 120%;
     }
     a.link_menu:hover {
-        margin-right: 4%;
-        text-decoration: underline 2px solid white;
-        color: rgb(191, 173, 224);
+        text-decoration: underline 2px solid rgb(248, 228, 255);
     }
     
     
@@ -642,10 +648,12 @@
         width: 5%;
         height: 5%;
     }
-    #Content2Home {
+    .Content2Home {
         display: flex;
+        justify-content: space-between;
         /* background-color: yellow; */
         width: 100%;
+        margin-top: 2%;
     }
     
     .BoxContent {
@@ -772,6 +780,7 @@
         font-size: 100%;
     }
     div.project {
+        color: white;
         margin-top: 3%;
         margin-left: 10%;
         display: inline-block;
