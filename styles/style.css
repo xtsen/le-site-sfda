@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,700&display=swap');
+
+body {
+    background-color: #fff;
+    color: #222;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+.navTopBar {
+    width: 100vw;
+    background-color: #222;
+    display: grid;
+    grid-template-columns: 20vw 80vw;
+    color: #222;
+}
+.logoAndName {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+.logoNavBar {
+    width: 100%;
+    margin: 0 0 0 5%;
+}
+.titleNavBar {
+    text-align: left;
+    color: #fff;
+}
+.navigationListe {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    list-style-type: none;
+    font-size: 120%;
+}
+.navBarLink {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: all .3s ease;
+    border-radius: 10px;
+}
+
+.navigationItem {
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.navigationItem:hover {
+    transform: scale(1.05);
+}
+.navBarLink:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(22, 22, 22);
+    padding: 3%;
+}
+
+/* Main */
+.mainContent {
+    margin-top: 10vh;
+}
+.galery {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    row-gap: 4vh;
+}
+.itemGalery {
+    margin: 0 auto;
+    color: aliceblue;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    width: 30vw;
+    height: 60vh;
+    background-color: rgb(41, 41, 41);
+    content: " ";
+    border-radius: 10px;
+    box-shadow: -5px 6px 5px -1px rgba(21,21,21,0.24);
+}
