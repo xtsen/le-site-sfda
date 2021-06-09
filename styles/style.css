@@ -66,14 +66,24 @@ body {
     row-gap: 4vh;
 }
 .itemGalery {
+    padding: 2%;
     margin: 0 auto;
     color: aliceblue;
-    display: grid;
-    grid-template-rows: 30% 70%;
     width: 30vw;
     height: 60vh;
-    background-color: rgb(41, 41, 41);
+    background-image: url('../res/backgroundCard.png');
+    background-size: cover;
     content: " ";
     border-radius: 10px;
     box-shadow: -5px 6px 5px -1px rgba(21,21,21,0.24);
+}
+.titleCardGalery {
+    z-index: 10;
+    text-align: center;
+    font-size: 200%;
+    font-weight: 700;
+}
+.contentCardGalery {
+    font-size: 140%;
+    text-align: justify;
 }
