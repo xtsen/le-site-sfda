@@ -7,7 +7,20 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+.scrollContainer,
+.scrollArea {
+  height: 100vh;
+  margin: 0 auto;
+}
 
+.scrollContainer {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.scrollArea {
+  scroll-snap-align: start;
+}
 /* Nav bar */
 .navTopBar {
     width: 100vw;
@@ -64,17 +77,17 @@ body {
     height: 100vh;
     color: #fff;
     background-color: #222;
-    margin-top: 8vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .titleHeroHeader {
     text-align: center;
     font-size: 200%;
     font-weight: 700;
     outline: none;
-    margin-top: -10%;
+    margin-top: -5%;
     margin-bottom: 5%;
     cursor: crosshair;
 }
@@ -84,10 +97,18 @@ body {
     width: 70%;
     margin: 0 auto;
 }
-
+.space {
+    content: " ";
+    height: 12vh;
+}
 /* Main */
 .mainContent {
-    margin-top: 10vh;
+    margin-top: 2vh;
+    scroll-snap-align: start;
+}
+.titleSection {
+    font-size: 200%;
+    text-align: center;
 }
 .galery {
     display: grid;
