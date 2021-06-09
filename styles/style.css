@@ -8,13 +8,15 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Header */
+/* Nav bar */
 .navTopBar {
     width: 100vw;
     background-color: #222;
     display: grid;
     grid-template-columns: 40vw 60vw;
     color: #222;
+    position: fixed;
+    top: 0;
 }
 .logoAndName {
     display: grid;
@@ -54,6 +56,33 @@ body {
     background-color: rgb(255, 255, 255);
     color: rgb(22, 22, 22);
     padding: 3%;
+}
+
+/* Header */
+.heroHeader {
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background-color: #222;
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titleHeroHeader {
+    text-align: center;
+    font-size: 200%;
+    font-weight: 700;
+    outline: none;
+    margin-top: -10%;
+    margin-bottom: 5%;
+    cursor: crosshair;
+}
+.descriptionHeroHeader {
+    text-align: center;
+    font-size: 150%;
+    width: 70%;
+    margin: 0 auto;
 }
 
 /* Main */
