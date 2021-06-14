@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="styles/styleHome.css" />
 
     </head>
-    <body>
+    <body onscroll="getScroll()">
         <nav class="navTopBar">
             <div class="logoAndName">
                 <img class="logoNavBar" src="res/SFDApp.png" alt="le logo du site sfda">
@@ -34,43 +34,54 @@
             
             </ul>
         </nav>
-        <div class="scrollContainer">
-            <header class="scrollArea">
-                <div class="heroHeader">
-                    <input type="text" class="titleHeroHeader" value="Bienvenue sur le site Saint François d'assise">
-                    <p class="descriptionHeroHeader">
-                        Sur ce site vous allez pouvoir retrouver de nombreuses choses tel que les evenements à venir,
-                        le forum officiel du site et enfin mes projets soit en cours soit terminé
-                    </p>
-                </div>
-            </header>
-            <main class="mainContent">
-                <div class="space"></div>
-                <section class="explaination">
-                    <p class="titleSection">Vous pouvez retrouver tous les évènements du lycée à venir juste ci dessous :</p>
-                </section>
-                <section class="galery">
-                    <div class="itemGalery">
+
+        <header>
+            <div class="heroHeader">
+                <img class="svgHeroHeader" src="res/svgHeroHeader.png">
+                <input type="text" class="titleHeroHeader" value="Bienvenue sur le site Saint François d'assise">
+                <p class="descriptionHeroHeader">
+                    Sur ce site vous allez pouvoir retrouver de nombreuses choses tel que les evenements à venir,
+                    le forum officiel du site et enfin mes projets soit en cours soit terminé
+                </p>
+                <a href="#main" class="js-scrollTo"><button class="seeNext">➔</button></a>
+            </div>
+        </header>
+        <main class="mainContent">
+            <section class="explaination">
+                <p class="titleSection" id="main">Vous pouvez retrouver tous les évènements du lycée à venir juste ci dessous :</p>
+            </section>
+            <section class="galery">
+                <div class="itemGalery cardLeft" id="card1">
                     <p class="titleCardGalery">Here the title</p>
                     <p class="contentCardGalery">Here will be the description of the card</p>
-                    </div>
-                    <div class="itemGalery">
-                        <p class="titleCardGalery">Here the title</p>
-                        <p class="contentCardGalery">Here will be the description of the card</p>
-                    </div>
-                    <div class="itemGalery">
-                        <p class="titleCardGalery">Here the title</p>
-                        <p class="contentCardGalery">Here will be the description of the card</p>
-                    </div>
-                    <div class="itemGalery">
-                        <p class="titleCardGalery">Here the title</p>
-                        <p class="contentCardGalery">Here will be the description of the card</p>
-                    </div>
-                </section>
-            </main>
-        </div>
+                </div>
+                <div class="itemGalery cardRight" id="card2">
+                    <p class="titleCardGalery">Here the title</p>
+                    <p class="contentCardGalery">Here will be the description of the card</p>
+                </div>
+                <div class="itemGalery cardLeft" id="card3">
+                    <p class="titleCardGalery">Here the title</p>
+                    <p class="contentCardGalery">Here will be the description of the card</p>
+                </div>
+                <div class="itemGalery cardRight" id="card4">
+                    <p class="titleCardGalery">Here the title</p>
+                    <p class="contentCardGalery">Here will be the description of the card</p>
+                </div>
+            </section>
+        </main>
 
         <!-- Link js app -->
         <script src="scripts/appIndex.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                    var page = $(this).attr('href'); // Page cible
+                    var speed = 600; // Durée de l'animation (en ms)
+                    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                    return false;
+                });
+            });
+        </script>
     </body>
 </html>
