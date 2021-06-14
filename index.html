@@ -14,7 +14,8 @@
         <link rel="stylesheet" href="styles/styleHome.css" />
 
     </head>
-    <body onscroll="getScroll()">
+    <body onscroll="getScroll()" onload="loader()">
+        <div id="loader"></div>
         <nav class="navTopBar" id="navbar">
             <div class="logoAndName">
                 <img class="logoNavBar" src="res/SFDApp.png" alt="le logo du site sfda">
@@ -22,15 +23,15 @@
             </div>
             <ul class="navigationListe">
                     
-                <li class="navigationItem"><a href="index.html" class="navBarLink" id="navBarLink">Accueil</a></li>
+                <li class="navigationItem"><a class="navBarLink" id="navBarLink" onclick="transitionPage('index')">Accueil</a></li>
             
                 <li class="navigationItem"><a href="https://forumsfdapp.forumactif.com/" class="navBarLink" id="navBarLink2">Forum</a></li>
             
-                <li class="navigationItem"><a href="myProjects.html" class="navBarLink" id="navBarLink3">Mes projets</a></li>
+                <li class="navigationItem"><a class="navBarLink" id="navBarLink3" onclick="transitionPage('myProjects')">Mes projets</a></li>
             
-                <li class="navigationItem"><a href="contact.html" class="navBarLink" id="navBarLink4">Contact</a></li>
+                <li class="navigationItem"><a class="navBarLink" id="navBarLink4" onclick="transitionPage('contact')">Contact</a></li>
             
-                <li class="navigationItem"><a href="about.html" class="navBarLink" id="navBarLink5">A propos</a></li>
+                <li class="navigationItem"><a class="navBarLink" id="navBarLink5"  onclick="transitionPage('about')">A propos</a></li>
             
             </ul>
         </nav>
@@ -72,6 +73,7 @@
 
         <!-- Link js app -->
         <script src="scripts/appIndex.js"></script>
+        <script src="scripts/app.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>
             $(document).ready(function() {

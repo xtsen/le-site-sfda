@@ -7,6 +7,23 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
 }
+
+#loader {
+    content: " ";
+    background-color: #222;
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 10000000;
+    left: 42vw;
+    right: auto;
+    top: 40vh;
+    bottom: auto;
+    transform: scale(20);
+    transition: all 0.5s ease;
+}
+
 /* Nav bar */
 .navTopBar {
     z-index: 10000;
