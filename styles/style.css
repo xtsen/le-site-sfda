@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,700&display=swap');
 
 body {
-    background-color: rgb(27, 27, 27);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 0;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -11,12 +11,13 @@ body {
 .navTopBar {
     z-index: 10000;
     width: 100vw;
-    background-color: #222;
+    /* background-color: #222; */
     display: grid;
     grid-template-columns: 40vw 60vw;
     color: #222;
     position: fixed;
     top: 0;
+    transition: all 0.3S ease;
 }
 .logoAndName {
     display: grid;
@@ -26,9 +27,9 @@ body {
     width: 50%;
     margin: 5% 0 0 5%;
 }
-.titleNavBar {
+#titleNavBar {
     text-align: left;
-    color: #fff;
+    color: rgb(19, 19, 19);
     font-size: 120%;
     margin-left: -10%;
 }
@@ -39,7 +40,7 @@ body {
     font-size: 120%;
 }
 .navBarLink {
-    color: rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
     text-decoration: none;
     transition: all .3s ease;
     border-radius: 10px;
@@ -56,4 +57,8 @@ body {
     background-color: rgb(255, 255, 255);
     color: rgb(22, 22, 22);
     padding: 3%;
+}
+#navBarLink2 {
+    color: #222;
+    text-decoration: none;
 }
