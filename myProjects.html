@@ -4,10 +4,76 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-">
 
-        <title>Mes projets</title>
+        <link rel="icon" href="res/SFDApp.png" />
 
-        <!-- Liens des stylesheet -->
-        <link rel="stylesheet" href="styles/styleProjects.css">
+
+        <title>SFDApp</title>
+
+        <!-- Link stylesheet -->
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/styleProjects.css" />
 
     </head>
+    <body onscroll="getScroll()" onload="checking()">
+        <nav class="navTopBar" id="navbar">
+            <div class="logoAndName">
+                <img class="logoNavBar" src="res/SFDApp.png" alt="le logo du site sfda">
+                <p id="titleNavBar">SFDApp</p>
+            </div>
+            <ul class="navigationListe">
+                    
+                <li class="navigationItem"><a href="index.html" class="navBarLink" id="navBarLink">Accueil</a></li>
+            
+                <li class="navigationItem"><a href="https://forumsfdapp.forumactif.com/" class="navBarLink" id="navBarLink2">Forum</a></li>
+            
+                <li class="navigationItem"><a href="myProjects.html" class="navBarLink" id="navBarLink3">Mes projets</a></li>
+            
+                <li class="navigationItem"><a href="contact.html" class="navBarLink" id="navBarLink4">Contact</a></li>
+            
+                <li class="navigationItem"><a href="about.html" class="navBarLink" id="navBarLink5">A propos</a></li>
+            
+            </ul>
+        </nav>
+
+        <header>
+            <div class="heroHeader">
+                <img class="svgHeroHeader" src="res/myProjectsSVG.png">
+                <input type="text" class="titleHeroHeader" value="Voici mes projets">
+                <p class="descriptionHeroHeader">
+                    Sur cette page vous pouvez observer les sites que j'ai déjà réalisé. Amusez vous !
+                </p>
+                <a href="#main" class="js-scrollTo"><button class="seeNext">➔</button></a>
+            </div>
+        </header>
+        <main class="mainContent" id="main">
+            <section class="slideGalery">
+                <img id="imgSiteNext" src="" alt="image du site d'avant site">
+                <img id="imgSite" src="res/backgrounds/backgroundEveryweb.png" alt="image du site actuel">
+                <button class="controlButton" onclick="nextWebsite()">➔</button>
+                <img id="imgSitePrevious" src="" alt="image du prochain site">
+            </section>
+            <section class="bottomInfo">
+                <p id="siteName">Everyweb</p>
+                <p id="timeToDo">100h</p>
+                <div id="seeThisSite">
+                    <button id="buttonSeeWebsite" onclick="linkwebsite()">Voir le site</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Link js app -->
+        <script src="scripts/appProjects.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                    var page = $(this).attr('href'); // Page cible
+                    var speed = 600; // Durée de l'animation (en ms)
+                    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                    return false;
+                });
+            });
+        </script>
+    </body>
 </html>

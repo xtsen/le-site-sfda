@@ -62,3 +62,75 @@ body {
 #navBarLink2 {
     text-decoration: none;
 }
+/* Header */
+.heroHeader {
+    z-index: -1000;
+    width: 100vw;
+    height: 100vh;
+    color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.titleHeroHeader {
+    z-index: 10;
+    text-align: left;
+    width: 50vw;
+    margin: 5% auto 1% 5%;
+    font-size: 200%;
+    font-weight: 700;
+    outline: none;
+    cursor: crosshair;
+    border: none;
+    border-radius: 10px;
+    /* background: none; */
+}
+.descriptionHeroHeader {
+    z-index: 10;
+    width: 50vw;
+    text-align: left;
+    margin: 0 auto 5% 5% ;
+    font-size: 150%;
+}
+.seeNext {
+    border: 1px rgb(34, 34, 34) solid;
+    background: none;
+    z-index: 10;
+    width: fit-content;
+    padding: 3%;
+    border-radius: 50%;
+    text-align: left;
+    font-size: 200%;
+    margin: 0 auto 0 10% ;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.seeNext:hover {
+    transform: rotate(90deg);
+    background-color: #fdf366e7;
+    animation: shapes 10s ease infinite;
+}
+
+/* Animations */
+@keyframes floating {
+    50% {
+        transform: translateY(5%)
+    }
+    100% {
+        transform: translateY(0%)
+    }
+}
+@keyframes shapes {
+    33% {
+        border-radius: 100% 54% 90% 41% / 100% 87% 55% 44%;
+    }
+    66% {
+        border-radius: 75% 44% 81% 68% / 71% 60% 91% 79%;
+    }
+    99% {
+        border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    }
+}

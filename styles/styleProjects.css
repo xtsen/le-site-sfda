@@ -1,0 +1,111 @@
+/* Header */
+.svgHeroHeader {
+    position: absolute;
+    z-index: 2;
+    width: 60%;
+    top: 15%;
+    left: auto;
+    right: 5%;
+    animation: floating 5s ease infinite;
+    /* animation: turnSVG 5s .5s ease infinite; */
+}
+
+/* Main */
+.mainContent {
+    margin-top: 8vh;
+    height: 92vh;
+    width: 100vw;
+    background: rgb(179,226,246);
+    background: -moz-radial-gradient(circle, rgba(179,226,246,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(179,226,246,1) 0%, rgba(255,255,255,1) 100%);
+    background: radial-gradient(circle, rgba(179,226,246,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b3e2f6",endColorstr="#ffffff",GradientType=1);
+}
+.bottomInfo {
+    width: 50vw;
+    position: sticky;
+    top: 90vh;
+    margin: auto;
+    background-color: rgb(230, 253, 255, 0.4);
+    padding: 1%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 1px rgba(44, 44, 44, 0.116) solid;
+}
+#imgSite {
+    width: 50%;
+    margin: 5% auto 0;
+    margin-left: 25%;
+}
+#imgSiteNext, #imgSitePrevious {
+    width: 30%;
+    transform: scale(0.5);
+    filter: blur(3px);
+    position: absolute;
+    margin-top: 10%;
+}
+#imgSiteNext {
+    margin-left: -5%;
+}
+#buttonSeeWebsite {
+    font-size: 130%;
+    border: 1px rgba(0, 0, 0, 0.45) solid;  
+    padding: 2%;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+#buttonSeeWebsite:hover {
+    background-color: #222;
+    color: white;
+}
+.controlButton {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 130%;
+    border: none;
+    position: absolute;
+    margin-top: 32vh;
+    margin-left: 2%;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.controlButton:hover {
+    background-color: #222;
+    color: #fff;
+    transform: scale(1.2);
+}
+#siteName {
+    font-size: 200%;
+    font-weight: 700;
+    text-align: center;
+}
+#timeToDo {
+    font-size: 140%;
+    text-align: center;
+}
+
+/* Animations */
+.animNext {
+    animation: animNext 0.90s ease forwards;
+}
+@keyframes animNext {
+    50% {
+        opacity: 0;
+        transform: translateX(-100%) scale(0.5);
+    }
+    75%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%) scale(1);
+    }
+}
