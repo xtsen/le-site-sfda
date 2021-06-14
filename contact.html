@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-">
+
+        <link rel="icon" href="res/SFDApp.png" />
+
+
+        <title>SFDApp</title>
+
+        <!-- Link stylesheet -->
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/styleContact.css" />
+
+    </head>
+    <body onscroll="getScroll()" onload="loader()">
+        <div id="loader"></div>
+        <nav class="navTopBar" id="navbar">
+            <div class="logoAndName">
+                <img class="logoNavBar" src="res/SFDApp.png" alt="le logo du site sfda">
+                <p id="titleNavBar">SFDApp</p>
+            </div>
+            <ul class="navigationListe">
+                    
+                <li class="navigationItem"><a class="navBarLink" id="navBarLink" onclick="transitionPage('index')">Accueil</a></li>
+            
+                <li class="navigationItem"><a href="https://forumsfdapp.forumactif.com/" class="navBarLink" id="navBarLink2">Forum</a></li>
+            
+                <li class="navigationItem"><a class="navBarLink" id="navBarLink3" onclick="transitionPage('myProjects')">Mes projets</a></li>
+            
+                <li class="navigationItem"><a class="navBarLink" id="navBarLink4" onclick="transitionPage('contact')">Contact</a></li>
+            
+                <li class="navigationItem"><a class="navBarLink" id="navBarLink5"  onclick="transitionPage('about')">A propos</a></li>
+            
+            </ul>
+        </nav>
+
+        <header>
+            <div class="heroHeader">
+                <img class="svgHeroHeader" src="res/contactSVG.png">
+                <input type="text" class="titleHeroHeader" value="Me contacter">
+                <p class="descriptionHeroHeader">
+                    Vous chercher à me contacter ? Voici mes coordonées
+                </p>
+                <a href="#main" class="js-scrollTo"><button class="seeNext">➔</button></a>
+            </div>
+        </header>
+        <main class="mainContent" id="main">
+            <section class="imageContact"></section>
+            <section class="FormContact">
+                <label for="name" class="label">Prénom :</label><br>
+                <input type="text" name="name" class="inputText" placeholder="Fabrice" minlength="2" required><br>
+
+                <label for="email" class="label">E-mail :</label><br>
+                <input type="email" name="email" class="inputText" placeholder="john.doe@gmail.com" required><br>
+
+                <label for="email" class="label">Message :</label><br>
+                <textarea type="email" name="email" class="inputText message" placeholder="Bonjour, ..." minlength="10" required></textarea><br>
+                <button class="sendMail">Envoyer</button>
+            </section>
+        </main>
+
+        <!-- Link js app -->
+        <script src="scripts/appContact.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                    var page = $(this).attr('href'); // Page cible
+                    var speed = 600; // Durée de l'animation (en ms)
+                    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                    return false;
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+/* Header */
+.svgHeroHeader {
+    position: absolute;
+    z-index: 2;
+    width: 60%;
+    top: 20%;
+    left: auto;
+    right: 5%;
+    animation: floating 5s ease infinite;
+    /* animation: turnSVG 5s .5s ease infinite; */
+}
+
+/* Main */
+.mainContent {
+    margin-top: 8vh;
+    height: 92vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+}
+.imageContact {
+    background-image: url('../res/contactFormSVG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    content: " ";
+}
+.FormContact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5%;
+    color: #fff;
+    background-color: #222;
+}
+.label {
+    font-size: 130%;
+    text-align: center;
+}
+.inputText {
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    overflow: scroll;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 130%;
+    width: 30%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.inputText:focus {
+    width: 100%;
+}
+.inputText:invalid {
+    border-bottom: 1px solid rgb(233, 106, 106);
+}
+.inputText:valid {
+    border-bottom: 1px solid rgb(106, 233, 144);
+}
+.message {
+    height: 15vh;
+}
+.sendMail {
+    font-size: 130%;
+    padding: 2%;
+    margin: 0 auto;
+    border: none;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: fit-content;
+}
+.sendMail:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transform: scale(1.1);
+    border: 1px rgba(255, 255, 255, 0.4) solid;
+} 

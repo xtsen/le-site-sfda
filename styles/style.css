@@ -126,7 +126,7 @@ body {
 }
 .seeNext:hover {
     transform: rotate(90deg);
-    background-color: #fdf366e7;
+    background-color: #fdf8aee7;
     animation: shapes 10s ease infinite;
 }
 
