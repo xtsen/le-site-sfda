@@ -32,6 +32,7 @@ body {
     color: rgb(19, 19, 19);
     font-size: 120%;
     margin-left: -10%;
+    cursor: defaultr;
 }
 .navigationListe {
     display: grid;
@@ -54,11 +55,10 @@ body {
     transform: scale(1.05);
 }
 .navBarLink:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgb(22, 22, 22);
+    background-color: rgb(255, 139, 110);
+    color: rgb(20, 20, 20);
     padding: 3%;
 }
 #navBarLink2 {
-    color: #222;
     text-decoration: none;
 }
