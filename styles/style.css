@@ -69,12 +69,11 @@ body {
     transition: all 0.3s ease;
 }
 .navigationItem:hover {
-    transform: scale(1.05);
+    transform: scale(1.3);
 }
 .navBarLink:hover {
-    background-color: rgb(255, 139, 110);
+    cursor: pointer;
     color: rgb(20, 20, 20);
-    padding: 3%;
 }
 #navBarLink2 {
     text-decoration: none;
