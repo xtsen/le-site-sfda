@@ -24,7 +24,7 @@ function inviteToDiscord() {
 }
 function getScroll() {
     var y = window.scrollY;
-    if (window.innerWidth > 768) {
+    if (window.innerWidth < 768) {
         if (y >= 720) {
             document.getElementById("navbar").style.backgroundColor = "#222";
             document.getElementById("titleNavBar").style.color = "#fff";
@@ -34,6 +34,12 @@ function getScroll() {
             document.getElementById("navBarLink4").classList.remove("navBarLink")
             document.getElementById("navBarLink5").classList.remove("navBarLink")
             document.getElementById("navBarLink6").classList.remove("navBarLink")
+            document.getElementById("span1").classList.remove("spanBurger")
+            document.getElementById("span2").classList.remove("spanBurger")
+            document.getElementById("span3").classList.remove("spanBurger")
+            document.getElementById("span1").classList.add("spanOnScroll")
+            document.getElementById("span2").classList.add("spanOnScroll")
+            document.getElementById("span3").classList.add("spanOnScroll")
             document.getElementById("navBarLink").classList.add("navBarLinkOnScroll")
             document.getElementById("navBarLink2").classList.add("navBarLinkOnScroll")
             document.getElementById("navBarLink3").classList.add("navBarLinkOnScroll")
@@ -49,6 +55,12 @@ function getScroll() {
             document.getElementById("navBarLink4").classList.remove("navBarLinkOnScroll")
             document.getElementById("navBarLink5").classList.remove("navBarLinkOnScroll")
             document.getElementById("navBarLink6").classList.remove("navBarLinkOnScroll")
+            document.getElementById("span1").classList.add("spanBurger")
+            document.getElementById("span2").classList.add("spanBurger")
+            document.getElementById("span3").classList.add("spanBurger")
+            document.getElementById("span1").classList.remove("spanOnScroll")
+            document.getElementById("span2").classList.remove("spanOnScroll")
+            document.getElementById("span3").classList.remover("spanOnScroll")
             document.getElementById("navBarLink").classList.add("navBarLink")
             document.getElementById("navBarLink2").classList.add("navBarLink")
             document.getElementById("navBarLink3").classList.add("navBarLink")
