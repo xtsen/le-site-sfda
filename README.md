@@ -13,3 +13,8 @@ Quand tu découvrira cet easter egg tu aura le droit a un rôle spécial sur not
 
 ## Rejoindre la communauté 📯
 Si tu veux partager ton avis sur l'application n'hesite pas a nous rejoindre sur le [serveur discord](https://discord.com/invite/yJyYWv2Ydh)
+
+## A venir : 📜
+* possibilté de mettre le site en anglais
+* Ajout d'un mode sombre
+* Modification du contenu de la page `Accueil`
