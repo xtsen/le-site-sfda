@@ -60,7 +60,7 @@ function getScroll() {
             document.getElementById("span3").classList.add("spanBurger")
             document.getElementById("span1").classList.remove("spanOnScroll")
             document.getElementById("span2").classList.remove("spanOnScroll")
-            document.getElementById("span3").classList.remover("spanOnScroll")
+            document.getElementById("span3").classList.remove("spanOnScroll")
             document.getElementById("navBarLink").classList.add("navBarLink")
             document.getElementById("navBarLink2").classList.add("navBarLink")
             document.getElementById("navBarLink3").classList.add("navBarLink")
