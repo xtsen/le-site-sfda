@@ -7,9 +7,9 @@ SFDApp à pour but de favoriser la communication entre les élèves de facon plu
 Mais aussi d'apporter une nouvelle version du site actuel du lycée Saint François d'Assise.<br> 
 
 ## Easter egg 🥚
-Si tu es un developpeurs, sois sans crainte nous t'avons réserver de petites surprises ! <br> 
-À toi de les decouvrir 😃<br> 
-Quand tu découvrira cet easter egg tu aura le droit a uun rôle spécial sur notre serveur discord ✅<br> 
+Si tu es un developpeurs, sois sans crainte nous t'avons réserver une petite surprise ! <br> 
+À toi de la decouvrir 😃<br> 
+Quand tu découvrira cet easter egg tu aura le droit a un rôle spécial sur notre serveur discord ✅<br> 
 
 ## Rejoindre la communauté 📯
 Si tu veux partager ton avis sur l'application n'hesite pas a nous rejoindre sur le [serveur discord](https://discord.com/invite/yJyYWv2Ydh)
