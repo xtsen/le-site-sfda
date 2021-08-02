@@ -17,6 +17,7 @@
     overflow: hidden;
 }
 .titleSection {
+    color: #222;
     font-size: 200%;
     text-align: center;
     margin: 5% auto 5%;
@@ -25,19 +26,20 @@
 }
 .galery {
     display: grid;
-    grid-template-columns: 50vw 50vw;
+    grid-template-columns: 33vw 33vw 33vw;
     row-gap: 8vh;
 }
 .itemGalery {
     padding: 2%;
     margin: 0 auto;
     color: aliceblue;
-    width: 30vw;
-    height: 60vh;
+    width: 20vw;
+    height: 40vh;
     background-image: url('../res/backgroundCard.png');
     background-size: cover;
+    background-position: center;
     content: " ";
-    opacity: 0;
+    opacity: 1;
     border-radius: 10px;
     box-shadow: -5px 6px 5px -1px rgba(15, 15, 15, 0.24);
     transition: all 0.5s ease;
@@ -51,28 +53,54 @@
 .titleCardGalery {
     z-index: 10;
     text-align: center;
-    font-size: 200%;
+    font-size: 150%;
     font-weight: 700;
 }
 .contentCardGalery {
-    font-size: 140%;
+    font-size: 120%;
     text-align: justify;
 }
 
-/* Animations */
-.cardLeft {
-    transform: translateX(-400%)
+@media screen and (max-width: 768px) {
+    /* Header */
+    .svgHeroHeader {
+        position: absolute;
+        z-index: 2;
+        width: 90%;
+        top: 10%;
+        left: auto;
+        right: 5%;
+        animation: floating 5s ease infinite;
+    }
+    /* Main */
+    .galery {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        row-gap: 8vh;
+    }
+    .itemGalery {
+        padding: 2%;
+        margin: 0 auto;
+        color: aliceblue;
+        width: 80%;
+        height: 30vh;
+        background-image: url('../res/backgroundCard.png');
+        background-size: cover;
+        background-position: center;
+        content: " ";
+        opacity: 1;
+        border-radius: 10px;
+        box-shadow: -5px 6px 5px -1px rgba(15, 15, 15, 0.24);
+        transition: all 0.5s ease;
+    }
+    .titleCardGalery {
+        z-index: 10;
+        text-align: center;
+        font-size: 100%;
+        font-weight: 700;
+    }
+    .contentCardGalery {
+        font-size: 80%;
+        text-align: justify;
+    }
 }
-.cardRight {
-    transform: translateX(400%)
-}
-.translateRight {
-    transform: translateX(0);
-    opacity: 1;
-}
-.translateLeft {
-    transform: translateX(0);
-    opacity: 1;
-}
-
-

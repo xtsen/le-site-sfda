@@ -83,3 +83,39 @@
     transform: scale(1.1);
     border: 1px rgba(255, 255, 255, 0.4) solid;
 } 
+@media screen and (max-width: 768px) {
+    /* Header */
+    .svgHeroHeader {
+        position: absolute;
+        z-index: 2;
+        width: 90%;
+        top: 10%;
+        left: auto;
+        right: 5%;
+        animation: floating 5s ease infinite;
+    }
+    /* Main */
+    .mainContent {
+        margin-top: 8vh;
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 00vw 100vw;
+    }
+    .inputText {
+        margin: auto;
+        font-family: 'Open Sans', sans-serif;
+        overflow: scroll;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-size: 130%;
+        width: 60%;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        color: #fff;
+        transition: all 0.3s ease;
+    }
+    
+}

@@ -21,12 +21,11 @@
 
         <!-- Link stylesheet -->
         <link rel="stylesheet" href="styles/style.css" />
-        <link rel="stylesheet" href="styles/styleHome.css" />
+        <link rel="stylesheet" href="styles/styleDownloadApp.css" />
 
     </head>
     <body onscroll="getScroll()" onload="loader()">
         <div id="loader"></div>
-        
         <nav class="navTopBar" id="navbar">
             <div class="logoAndName">
                 <img class="logoNavBar" src="res/SFDApp.png" alt="le logo du site sfda">
@@ -76,50 +75,27 @@
 
         <header>
             <div class="heroHeader">
-                <img class="svgHeroHeader" src="res/svgHeroHeader.png">
-                <input type="text" class="titleHeroHeader" value="Bienvenue sur le site Saint François d'assise">
+                <img class="svgHeroHeader" src="res/downloadSVG.png">
+                <input type="text" class="titleHeroHeader" value="Télécharger l'application SFDApp">
                 <p class="descriptionHeroHeader">
-                    Sur ce site vous allez pouvoir retrouver de nombreuses choses tel que les evenements à venir,
-                    le forum officiel du site et enfin mes projets soit en cours soit terminé
+                    Après une longue attentte vous allez enfin pouvoir télécharger l'application SFDApp !
                 </p>
                 <a href="#main" class="js-scrollTo"><button class="seeNext">➔</button></a>
             </div>
         </header>
         <main class="mainContent">
-            <button class="joinDiscord" onclick="inviteToDiscord()"><img src="res/LogoDiscord.png" alt="le logo de discord" class="logoDiscord"></button>
-            <section class="explaination">
-                <p class="titleSection" id="main">Vous pouvez retrouver tous les évènements du lycée à venir juste ci dessous :</p>
-            </section>
-            <section class="galery">
-                <div class="itemGalery cardLeft">
-                    <p class="titleCardGalery">VISITE DU PRÉSIDENT DU CONSEIL DÉPARTEMENTAL DE LA VENDÉE</p>
-                    <p class="contentCardGalery"></p>
+            <button class="joinDiscord" onclick="inviteToDiscord()"><img src="res/LogoDiscord.png" alt="le logo de discord" class="logoDiscord"></button> 
+            <section>
+                <div class="bar-container" id="bar-container">
+                    <div class="progress-bar" id="progress-bar"></div>
                 </div>
-                <div class="itemGalery cardRight">
-                    <p class="titleCardGalery">L'AGORA DE CICERON</p>
-                    <p class="contentCardGalery">Le lycée SFDA a créé son propre concours d'éloquence...</p>
-                </div>
-                <div class="itemGalery cardLeft">
-                    <p class="titleCardGalery">UNE PAGE SE TOURNE DÉFINITIVEMENT</p>
-                    <p class="contentCardGalery"></p>
-                </div>
-                <div class="itemGalery cardRight">
-                    <p class="titleCardGalery">CONCOURS NATIONAL DE LA RÉSISTANCE 2021</p>
-                    <p class="contentCardGalery">Des élèves ont présenté leur production dans le cadre du Concours National de la Résistance...</p>
-                </div>
-                <div class="itemGalery cardLeft">
-                    <p class="titleCardGalery">PREMIERS PAS À L'UNIVERSITÉ</p>
-                    <p class="contentCardGalery">Etre en Terminale à SFDA et suivre des cours à l'Université...</p>
-                </div>
-                <div class="itemGalery cardRight">
-                    <p class="titleCardGalery">COMMET INTÉGRER LA MÉTHODE DU COMMENTAIRE LITTÉRAIRE DE FAÇON ORIGINALE ?</p>
-                    <p class="contentCardGalery"></p>
-                </div>
+                <button class="downloadButton" id="download-btn" onclick="download()"><i class="fas fa-download fa-lg">Télécharger</i></button>
+                <i class="repeat-btn fas fa-redo-alt fa-lg" id="repeat-btn" onclick="reset()"></i>
             </section>
         </main>
 
         <!-- Link js app -->
-        <script src="scripts/appIndex.js"></script>
+        <script src="scripts/appDownloadApp.js"></script>
         <script src="scripts/app.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>

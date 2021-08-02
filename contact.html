@@ -31,6 +31,31 @@
                 <img class="logoNavBar" src="res/SFDApp.png" alt="le logo du site sfda">
                 <p id="titleNavBar">SFDApp</p>
             </div>
+            <div class="burger">
+                <input id="burger" type="checkbox" />
+    
+                <label class="labelBurger" for="burger">
+                    <span id="span1"></span>
+                    <span id="span2"></span>
+                    <span id="span3"></span>
+                </label>
+    
+                <nav>    
+                    <ul>
+                        <li class="navigationItem"><a class="navBarLink" id="navBarLink" onclick="transitionPage('index')">Accueil</a></li>
+            
+                        <li class="navigationItem"><a href="https://forumsfdapp.forumactif.com/" class="navBarLink" id="navBarLink2">Forum</a></li>
+                    
+                        <li class="navigationItem"><a class="navBarLink" id="navBarLink3" onclick="transitionPage('myProjects')">Mes projets</a></li>
+
+                        <li class="navigationItem"><a class="navBarLink" id="navBarLink4" onclick="transitionPage('downloadApp')">Télécharger</a></li>
+                    
+                        <li class="navigationItem"><a class="navBarLink" id="navBarLink5" onclick="transitionPage('contact')">Contact</a></li>
+                    
+                        <li class="navigationItem"><a class="navBarLink" id="navBarLink6"  onclick="transitionPage('about')">A propos</a></li>
+                    </ul>  
+                </nav>
+            </div>
             <ul class="navigationListe">
                     
                 <li class="navigationItem"><a class="navBarLink" id="navBarLink" onclick="transitionPage('index')">Accueil</a></li>
@@ -38,10 +63,12 @@
                 <li class="navigationItem"><a href="https://forumsfdapp.forumactif.com/" class="navBarLink" id="navBarLink2">Forum</a></li>
             
                 <li class="navigationItem"><a class="navBarLink" id="navBarLink3" onclick="transitionPage('myProjects')">Mes projets</a></li>
+
+                <li class="navigationItem"><a class="navBarLink" id="navBarLink4" onclick="transitionPage('downloadApp')">Télécharger</a></li>
             
-                <li class="navigationItem"><a class="navBarLink" id="navBarLink4" onclick="transitionPage('contact')">Contact</a></li>
+                <li class="navigationItem"><a class="navBarLink" id="navBarLink5" onclick="transitionPage('contact')">Contact</a></li>
             
-                <li class="navigationItem"><a class="navBarLink" id="navBarLink5"  onclick="transitionPage('about')">A propos</a></li>
+                <li class="navigationItem"><a class="navBarLink" id="navBarLink6"  onclick="transitionPage('about')">A propos</a></li>
             
             </ul>
         </nav>
@@ -57,6 +84,7 @@
             </div>
         </header>
         <main class="mainContent" id="main">
+            <button class="joinDiscord" onclick="inviteToDiscord()"><img src="res/LogoDiscord.png" alt="le logo de discord" class="logoDiscord"></button>
             <section class="imageContact"></section>
             <section class="FormContact">
                 <label for="name" class="label">Prénom :</label><br>

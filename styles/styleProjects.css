@@ -105,3 +105,76 @@
         transform: translateX(0%) scale(1);
     }
 }
+@media screen and (max-width: 768px) {
+    /* Header */
+    .svgHeroHeader {
+        position: absolute;
+        z-index: 2;
+        width: 90%;
+        top: 10%;
+        left: auto;
+        right: 5%;
+        animation: floating 5s ease infinite;
+    }
+    /* Main */
+    .mainContent {
+        margin-top: 8vh;
+        height: 95vh;
+        width: 100vw;
+        background: rgb(37, 37, 37);
+    }
+    .bottomInfo {
+        width: 90vw;
+        position: sticky;
+        top: 40vh;
+        height: 60vh;
+        margin: auto;
+        background-color: rgb(71, 71, 71);
+        color:rgb(255, 255, 255);
+        padding: 1%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border: 1px rgba(44, 44, 44, 0.116) solid;
+    }
+    #imgSite {
+        width: 90%;
+        margin: 20% auto 0;
+        margin-left: 5%;
+        display: none;
+    }
+    #imgSiteNext, #imgSitePrevious {
+        display: none;
+    }
+    .controlButton {
+        width: 70px;
+        height: 70px;
+        background-color: white;
+        border-radius: 50%;
+        font-size: 150%;
+        border: none;
+        position: absolute;
+        margin-top: 10vh;
+        margin-left: 40%;
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+        display: block;
+    }
+    .controlButton:hover {
+        background-color: rgb(255, 255, 255);
+        color: #222;
+        transform: scale(1.1);
+    }
+    #buttonSeeWebsite {
+        font-size: 130%;
+        border: 1px rgba(255, 255, 255, 0.45) solid;  
+        padding: 2%;
+        color: #fff;
+        border-radius: 10px;
+        width: 50%;
+        margin-left: 25%;
+        cursor: pointer;
+        background-color: transparent;
+        transition: all 0.3s ease;
+    }
+}

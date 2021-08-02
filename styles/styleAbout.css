@@ -14,8 +14,9 @@ body {
 }
 
 /* Main */
+
 .svgAbout {
-    margin-top: 10%;
+    margin-top: 7%;
     margin-left: 25%;
     cursor: pointer;
     
@@ -26,5 +27,25 @@ body {
 @keyframes rotateSVG {
     100% {
         transform: rotate(360deg);
+    }
+}
+@media screen and (max-width: 768px) {
+    /* Header */
+    .svgHeroHeader {
+        position: absolute;
+        z-index: 2;
+        width: 90%;
+        top: 10%;
+        left: auto;
+        right: 5%;
+        animation: floating 5s ease infinite;
+    }
+    /* Main */
+
+    .svgAbout {
+        margin-top: 1%;
+        margin-left: 5%;
+        cursor: pointer;
+        width: 100%;
     }
 }
